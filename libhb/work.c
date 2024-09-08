@@ -136,7 +136,7 @@ static void work_func( void * _work )
         // because the default values for the job come from the title.
         if (job->json != NULL)
         {
-            hb_deep_log(1, "json job:\n%s", job->json);
+            hb_log("json job:\n%s", job->json);
 
             // Initialize state sequence_id
             InitWorkState(job, 0, 0);
